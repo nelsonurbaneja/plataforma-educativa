@@ -12,7 +12,7 @@ import {
 const API_URL = process.env.REACT_APP_API_URL
 
 export const getAllPosts = () => dispatch => {
-  Axios.get(`${API_URL}/post`).then(
+  Axios.get(`${API_URL}/posts`).then(
     response => {
       return dispatch({
         type: GET_ALL_POSTS,
@@ -63,7 +63,7 @@ export const getPost = id => dispatch => {
   )
 }
 export const getSpeciality = id => dispatch => {
-  Axios.get(`${API_URL}/especialidades/${id}`).then(
+  Axios.get(`${API_URL}/especialidad/${id}`).then(
     response => {
       return dispatch({
         type: GET_SPECIALITY,
@@ -73,7 +73,7 @@ export const getSpeciality = id => dispatch => {
   )
 }
 export const getCourse = id => dispatch => {
-  Axios.get(`${API_URL}/cursos/${id}`).then(
+  Axios.get(`${API_URL}/curso/${id}`).then(
     response => {
       return dispatch({
         type: GET_COURSE,
