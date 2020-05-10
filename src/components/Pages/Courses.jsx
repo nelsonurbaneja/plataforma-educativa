@@ -17,7 +17,7 @@ const Courses = ( {match, courses} ) => {
         color="dark-color"
         imagen={
           {
-            src: "https://pixabay.com/get/51e8d0444e50b108f5d084609629317f163ad6ec564c704c7d2772dd954bcc58_1280.jpg",
+            src: "https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg",
             alt: "Banner Cursos"
           }
         }

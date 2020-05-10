@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import store from '../../redux/store'
 import { getCourse } from '../../redux/actionCreators'
 import Banner from '../Organisms/Banner'
+import { Link } from 'react-router-dom'
 
 const Course = ({ match, course }) => {
 
@@ -49,10 +50,10 @@ const Course = ({ match, course }) => {
                   <div className="l-section" key={cl.class.id}>
                     <h3 className="s-mb-0">{cl.class.title}</h3>
                     <p>{cl.class.description}</p>
-                    <ul>
+                    <ul className="data-list">
                       {
                         cl.subjects.map(s => (
-                          <li>{s.subject.title}</li>
+                          <li key={s.subject.id}><Link to={`/clase/${s.subject.id}`} className="color dark-color">{s.subject.title}</Link></li>
                         ))
                       }
                     </ul>

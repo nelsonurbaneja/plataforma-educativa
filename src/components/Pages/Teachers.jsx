@@ -17,7 +17,7 @@ const Teachers = ( {match, teachers} ) => {
         color="third-color"
         imagen={ 
           {
-            src: "https://pixabay.com/get/57e2d54a4c56ac14f6da8c7dda793678143cdbed5a546c48702773dd9f4acc51bf_1280.jpg", 
+            src: "https://blog.piensasolutions.com/wp-content/uploads/2017/10/bannerprogramacion.jpg", 
             alt: "Imagen del banner" 
           } 
         }
